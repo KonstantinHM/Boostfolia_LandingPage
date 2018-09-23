@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Boostfolia page</title>
+	<link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" href="css/helper.css">
+	<link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.css">
+	<link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="heading">
+				<div class="logo_wrapper">
+					<i class="pe-7s-rocket"></i>
+					<p>Boostfolia</p>
+				</div>
+				<div class="burger-menu_wrapper">
+					<a class="burger-menu_icon" onclick="myFunction()">
+						<img src="img/Burger-menu.png" alt="burger-menu">
+					</a>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<ul id="menu">
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">Services</a>
+					</li>
+				<li>
+					<a href="#">Portfolio</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="slider">
+		<div class="slider_item">
+			<img src="img/slider-image1.jpg" alt="slider-img">
+			<div class="container">
+				<div class="slider-titles">
+					<h2>We think creative be creative</h2>
+					<p>Like to do creative works<p>
+				</div>
+			</div>
+		</div>
+		<div class="slider_item">
+			<img src="img/slider-image2.jpg" alt="slider-img">
+			<div class="container">
+				<div class="slider-titles">
+					<h2>Second text</h2>
+					<p>Like to do creative works<p>
+				</div>
+			</div>
+		</div>
+		<div class="slider_item">
+			<img src="img/slider-image3.jpg" alt="slider-img">
+			<div class="container">
+				<div class="slider-titles">
+					<h2>Third text</h2>
+					<p>Like to do creative works<p>
+				</div>
+			</div>
+		</div>
+			<a class="prev slider_arrow pe-7s-angle-left" onclick="plusSlides(-1)"></a>
+			<a class="next slider_arrow pe-7s-angle-right" onclick="plusSlides(1)"></a>
+		<div class="scroll_down">
+			<i class="pe-7s-mouse"></i>
+			<p>Scroll down</p>
+		</div>
+	</section>
+	<section class="about">
+		<div class="container">
+			<div class="title wow fadeInUp" data-wow-duration="1s" data-wow-offset="300">
+				<h2>About us</h2>
+				<div class="title-line"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				Ut enim ad minim veniam.</p>
+			</div>
+			<div class="sections wow fadeInDown" data-wow-duration="1s" data-wow-offset="150">
+				<div class="sections-item">
+					<div class="item design pe-7s-paint"></div>
+					<h3>Creative design</h3>
+					<p>Lorem ipsum dolor sit amet, consecte-<br>tur adipisicing elit, sed do . . .</p>
+				</div>
+				<div class="sections-item">
+					<div class="item portfolio pe-7s-portfolio"></div>
+					<h3>Uniqu portfolio</h3>
+					<p>Lorem ipsum dolor sit amet, consecte-<br>tur adipisicing elit, sed do . . .</p>
+				</div>
+				<div class="sections-item">
+					<div class="item updates pe-7s-loop"></div>
+					<h3>Infinite updates</h3>
+					<p>Lorem ipsum dolor sit amet, consecte-<br>tur adipisicing elit, sed do . . .</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="video">
+		<div class="container-video">
+			<div class="text-wrapper wow fadeInLeft" data-wow-duration="1s" data-wow-offset="350">
+				<div class="text-area">
+					<h3>Watch behind the scene</h3>
+					<p>Lorem ipsum dolo the lorem r sit amet, consectetur adipisicing elit, 
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+					nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+					<div class="button_wrapper">
+						<button class="play_now_button" onclick="modalVideo()">Play now</button>
+					</div>
+				</div>
+			</div>
+			<div class="player-wrapper wow fadeInRight" data-wow-duration="1s" data-wow-offset="350"">
+				<div class="player_button pe-7s-play"></div>
+				<img src="img/video-bg.png" alt="player-bg">
+			</div>
+		</div>
+		<div id="modal_video-wrapper">
+			<p class="pe-7s-close" onclick="modalVideo()"></p>
+			<iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/DR9s88XLBf0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</section>
+	<section class="portfolio">
+		<div class="container">
+			<div class="title wow fadeInUp" data-wow-duration="1s" data-wow-offset="300">
+				<h2>Our works</h2>
+				<div class="title-line"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				Ut enim ad minim veniam.</p>
+			</div>
+			<div class="toggles wow fadeInUp" data-wow-duration="1s" data-wow-offset="200">
+				<ul id="portfolio-button_container">
+					<li class="portfolio-button active_tooggles-btn" onclick="filterSelection('all_projects')"><span>All projects</span></li>
+					<li class="portfolio-button" onclick="filterSelection('photography')"><span>Photography</span></li>
+					<li class="portfolio-button" onclick="filterSelection('web_design')"><span>Web design</span></li>
+					<li class="portfolio-button" onclick="filterSelection('branding')"><span>Branding</span></li>
+					<li class="portfolio-button" onclick="filterSelection('mobile_app')"><span>Mobile app</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="gallery-container">
+			<div class="gallery">
+					<div class="gallery-item photography"><img src="img/portfolio-item1.jpg" alt="image"></div>
+					<div class="gallery-item photography"><img src="img/portfolio-item7.jpg" alt="image"></div>
+					<div class="gallery-item photography"><img src="img/portfolio-item2.jpg" alt="image"></div>
+					<div class="gallery-item photography"><img src="img/portfolio-item8.jpg" alt="image"></div>
+					<div class="gallery-item web_design"><img src="img/portfolio-item3.jpg" alt="image"></div>
+					<div class="gallery-item web_design"><img src="img/portfolio-item9.jpg" alt="image"></div>
+					<div class="gallery-item web_design"><img src="img/portfolio-item4.jpg" alt="image"></div>
+					<div class="gallery-item web_design"><img src="img/portfolio-item10.jpg" alt="image"></div>
+					<div class="gallery-item branding"><img src="img/portfolio-item5.jpg" alt="image"></div>
+					<div class="gallery-item branding"><img src="img/portfolio-item11.jpg" alt="image"></div>
+					<div class="gallery-item branding"><img src="img/portfolio-item6.jpg" alt="image"></div>
+					<div class="gallery-item branding"><img src="img/portfolio-item12.jpg" alt="image"></div>
+					<div class="gallery-item mobile_app"><img src="img/portfolio-item13.jpg" alt="image"></div>
+					<div class="gallery-item mobile_app"><img src="img/portfolio-item14.jpg" alt="image"></div>
+					<div class="gallery-item mobile_app"><img src="img/portfolio-item15.jpg" alt="image"></div>
+			</div>
+		</div>
+	</section>
+	<section class="clients">
+		<div class="container wow fadeInDown" data-wow-duration="1s" data-wow-offset="250"">
+			<div class="owl-carousel">
+				<img class="item" src="img/tf_client-icon.png" alt="client-image">
+				<img class="item" src="img/gr_client-icon.png" alt="client-image">
+				<img class="item" src="img/vh_client-icon.png" alt="client-image">
+			</div>
+			<i class="PrevItemCarousel owl-navigation-arrows pe-7s-angle-left"></i>
+			<i class="NextItemCarousel owl-navigation-arrows pe-7s-angle-right"></i>
+		</div>
+	</section>
+	<section class="team">
+		<div class="container">
+			<div class="title wow fadeInUp" data-wow-duration="1s" data-wow-offset="300">
+				<h2>Who we are</h2>
+				<div class="title-line"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				Ut enim ad minim veniam.</p>
+			</div>
+			<div class="member-wrapper">
+				<div class="member wow fadeInLeft" data-wow-duration="1s" data-wow-offset="300">
+					<div class="member_inside-wrapper">
+						<div class="memberCard fade">
+							<div class="photo">
+								<img src="img/Jane_Smith.png" alt="Jane_Smith">
+							</div>
+							<h5>Jane Smith</h5>
+							<p>Designer</p>
+							<div class="socials">
+								<i class="social-icon fab fa-behance"></i>
+								<i class="social-icon fab fa-twitter"></i>
+								<i class="social-icon fab fa-facebook"></i>
+							</div>
+						</div>
+						<div class="memberCard fade">
+							<div class="photo">
+								<img src="img/Adam_Savage.png" alt="Adam_Savage">
+							</div>
+							<h5>Adam Savage</h5>
+							<p>Engineer</p>
+							<div class="socials">
+								<i class="social-icon fab fa-behance"></i>
+								<i class="social-icon fab fa-twitter"></i>
+								<i class="social-icon fab fa-facebook"></i>
+							</div>
+						</div>
+						<div class="memberCard fade">
+							<div class="photo">
+								<img src="img/Patrick_Stewart.png" alt="Patrick_Stewart">
+							</div>
+							<h5>Patrick Stewart</h5>
+							<p>Captain</p>
+							<div class="socials">
+								<i class="social-icon fab fa-behance"></i>
+								<i class="social-icon fab fa-twitter"></i>
+								<i class="social-icon fab fa-facebook"></i>
+							</div>
+						</div>
+						<div class="dot-wrapper">
+							<span class="dot" onclick="currentMemberCard(1); currentSkillInsideWrapper(1)"></span>
+							<span class="dot" onclick="currentMemberCard(2); currentSkillInsideWrapper(2)"></span>
+							<span class="dot" onclick="currentMemberCard(3); currentSkillInsideWrapper(3)"></span>
+						</div>
+					</div>
+				</div>
+				<div class="skill wow fadeInRight" data-wow-duration="1s" data-wow-offset="300">
+					<div class="skill_inside-wrapper fade">
+						<div class="skill_wrapper-head">
+							<h5>My skills</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</p>
+						</div>
+						<div class="progress_bars">
+							<div class="skillbars">
+								<div class="skill-titles">
+									<p>Photoshop</p>
+									<p>Illustrator</p>
+									<p>Scetch</p>
+									<p>After Effects</p>
+								</div>
+								<div class="skill-line-wrapper">
+									<div class="skill-line">
+										<div class="skillbar" data-percent="88%">
+											<div class="skillbar-bar"></div>
+										</div>
+									</div>
+									<div class="skill-line">
+										<div class="skillbar" data-percent="92%">
+											<div class="skillbar-bar"></div>
+										</div>
+									</div>
+									<div class="skill-line">
+										<div class="skillbar" data-percent="90%">
+											<div class="skillbar-bar"></div>
+										</div>
+									</div>
+									<div class="skill-line">
+										<div class="skillbar" data-percent="98%">
+											<div class="skillbar-bar"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill-percent">
+									<div class="skillbar-bar-percent">88%</div>
+									<div class="skillbar-bar-percent">92%</div>
+									<div class="skillbar-bar-percent">90%</div>
+									<div class="skillbar-bar-percent">98%</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="skill_inside-wrapper fade">
+						<div class="skill_wrapper-head">
+							<h5>My skills</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</p>
+						</div>
+						<div class="progress_bars">
+							<div class="skillbars">
+								<div class="skill-titles">
+									<p>Destruction</p>
+									<p>Exsplosive</p>
+									<p>Construction</p>
+									<p>Charisma</p>
+								</div>
+								<div class="skill-line-wrapper">
+									<div class="skill-line">
+										<div class="skillbar" data-percent="100%">
+											<div class="skillbar-bar"></div>
+										</div>
+									</div>
+									<div class="skill-line">
+										<div class="skillbar" data-percent="95%">
+											<div class="skillbar-bar"></div>
+										</div>
+									</div>
+									<div class="skill-line">
+										<div class="skillbar" data-percent="75%">
+											<div class="skillbar-bar"></div>
+										</div>
+									</div>
+									<div class="skill-line">
+										<div class="skillbar" data-percent="96%">
+											<div class="skillbar-bar"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill-percent">
+									<div class="skillbar-bar-percent">100%</div>
+									<div class="skillbar-bar-percent">95%</div>
+									<div class="skillbar-bar-percent">75%</div>
+									<div class="skillbar-bar-percent">96%</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="skill_inside-wrapper fade">
+						<div class="skill_wrapper-head">
+							<h5>My skills</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</p>
+						</div>
+						<div class="progress_bars">
+							<div class="skillbars">
+								<div class="skill-titles">
+									<p>Leadership</p>
+									<p>Tactick</p>
+									<p>Facepalming</p>
+									<p>Cooking</p>
+								</div>
+								<div class="skill-line-wrapper">
+									<div class="skill-line">
+										<div class="skillbar" data-percent="100%">
+											<div class="skillbar-bar"></div>
+										</div>
+									</div>
+									<div class="skill-line">
+										<div class="skillbar" data-percent="87%">
+											<div class="skillbar-bar"></div>
+										</div>
+									</div>
+									<div class="skill-line">
+										<div class="skillbar" data-percent="100%">
+											<div class="skillbar-bar"></div>
+										</div>
+									</div>
+									<div class="skill-line">
+										<div class="skillbar" data-percent="81%">
+											<div class="skillbar-bar"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill-percent">
+									<div class="skillbar-bar-percent">100%</div>
+									<div class="skillbar-bar-percent">87%</div>
+									<div class="skillbar-bar-percent">100%</div>
+									<div class="skillbar-bar-percent">81%</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="features">
+		<div class="container">
+			<div class="title-type2 wow fadeInUp" data-wow-duration="1s" data-wow-offset="300">
+				<h2>Some features</h2>
+				<div class="title-type2-line"></div>
+			</div>
+			<div class="features_wrapper-container wow fadeInDown" data-wow-duration="1s" data-wow-offset="150"">
+				<div class="features-wrapper">
+					<div class="features-icon pe-7s-monitor"></div>
+					<h3>Shortcodes</h3>
+					<p class="count">46</p>
+				</div>
+				<div class="features-wrapper">
+					<div class="features-icon pe-7s-settings"></div>
+					<h3>Intergrated Plugins</h3>
+					<p class="count">128</p>
+				</div>
+				<div class="features-wrapper">
+					<div class="features-icon pe-7s-shopbag"></div>
+					<h3>Creative Products</h3>
+					<p class="count">450</p>
+				</div>
+				<div class="features-wrapper">
+					<div class="features-icon pe-7s-medal"></div>
+					<h3>Clients Worldwide</h3>
+					<p class="count count_plus">100</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="blogs">
+		<div class="container">
+			<div class="title wow fadeInUp" data-wow-duration="1s" data-wow-offset="300">
+				<h2>Blog posts</h2>
+				<div class="title-line"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				Ut enim ad minim veniam.</p>
+			</div>
+			<div class="blogs-wrapper wow fadeInDown" data-wow-duration="1s" data-wow-offset="250">
+				<div class="blog">
+					<div class="img-blog-field">
+						<img class="blog-img" src="img/blog-image1.jpg" alt="blog-image">
+						<div class="blog-hover-buttons">
+							<div class="blog-button share-post"><i class="pe-7s-link"></i></div>
+							<div class="blog-button watch-post"><i class="pe-7s-look"></i></div>
+						</div>
+					</div>
+					<div class="blog-content">
+						<div class="header-content">
+							<h5>Create Creative & Clean</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="blog-content-footer">
+							<div class="date">
+								<p><i class="pe-7s-clock pe-va"></i>25 Jan 2015</p>
+							</div>
+							<div class="like-comment">
+								<div class="like">
+									<p><i class="pe-7s-like2 pe-va"></i>25</p>
+								</div>
+								<div class="comment">
+									<p><i class="pe-7s-comment pe-va"></i>11</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blog">
+					<div class="img-blog-field">
+						<img class="blog-img" src="img/blog-image2.jpg" alt="blog-image">
+						<div class="blog-hover-buttons">
+							<div class="blog-button share-post"><i class="pe-7s-link"></i></div>
+							<div class="blog-button watch-post"><i class="pe-7s-look"></i></div>
+						</div>
+					</div>
+					<div class="blog-content">
+						<div class="header-content">
+							<h5>Make A Sleek Break</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="blog-content-footer">
+							<div class="date">
+								<p><i class="pe-7s-clock pe-va"></i>25 Jan 2015</p>
+							</div>
+							<div class="like-comment">
+								<div class="like">
+									<p><i class="pe-7s-like2 pe-va"></i>25</p>
+								</div>
+								<div class="comment">
+									<p><i class="pe-7s-comment pe-va"></i>11</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blog">
+					<div class="img-blog-field">
+						<img class="blog-img" src="img/blog-image3.jpg" alt="blog-image">
+						<div class="blog-hover-buttons">
+							<div class="blog-button share-post"><i class="pe-7s-link"></i></div>
+							<div class="blog-button watch-post"><i class="pe-7s-look"></i></div>
+						</div>
+					</div>
+					<div class="blog-content">
+						<div class="header-content">
+							<h5>Creative Manipulations</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="blog-content-footer">
+							<div class="date">
+								<p><i class="pe-7s-clock pe-va"></i>25 Jan 2015</p>
+							</div>
+							<div class="like-comment">
+								<div class="like">
+									<p><i class="pe-7s-like2 pe-va"></i>25</p>
+								</div>
+								<div class="comment">
+									<p><i class="pe-7s-comment pe-va"></i>11</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="pricing">
+		<div class="container">
+			<div class="title-type2 wow fadeInUp" data-wow-duration="1s" data-wow-offset="300">
+				<h2>Chose plan</h2>
+				<div class="title-type2-line"></div>
+			</div>
+			<div class="price-wrapper wow fadeInDown" data-wow-duration="1s" data-wow-offset="400">
+				<div class="price-card">
+					<div class="plan_name">
+						<h5>Basic</h5>
+						<p>Free</p>
+					</div>
+					<div class="offers">
+						<p><span>20</span> Pages</p>
+						<p><span>2</span> GB Storage</p>
+						<p><span>150</span> Members</p>
+						<p><span>2</span> Contributors</p>
+						<button>Purchase</button>
+					</div>
+				</div>
+				<div class="price-card">
+					<div class="plan_name">
+						<h5>Standart</h5>
+						<p><span>$</span>24.00</p>
+					</div>
+					<div class="offers">
+						<p><span>25</span> Pages</p>
+						<p><span>10</span> GB Storage</p>
+						<p><span>300</span> Members</p>
+						<p><span>5</span> Contributors</p>
+						<button>Purchase</button>
+					</div>
+				</div>
+				<div class="price-card">
+					<div class="plan_name">
+						<h5>Premium</h5>
+						<p><span>$</span>40.00</p>
+					</div>
+					<div class="offers">
+						<p><span>30</span> Pages</p>
+						<p><span>20</span> GB Storage</p>
+						<p><span>500</span> Members</p>
+						<p><span>10</span> Contributors</p>
+						<button>Purchase</button>
+					</div>
+				</div>
+				<div class="price-card">
+					<div class="plan_name">
+						<h5>Professional</h5>
+						<p><span>$</span>75.00</p>
+					</div>
+					<div class="offers">
+						<p><span>40</span> Pages</p>
+						<p><span>40</span> GB Storage</p>
+						<p><span>1000</span> Members</p>
+						<p><span>20</span> Contributors</p>
+						<button>Purchase</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact">
+		<div class="container">
+			<div class="title wow fadeInUp" data-wow-duration="1s" data-wow-offset="300">
+				<h2>Get in touch</h2>
+				<div class="title-line"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				Ut enim ad minim veniam.</p>
+			</div>
+			<div class="wrapper-form wow fadeInDown" data-wow-duration="1s" data-wow-offset="200">
+				<form action="action_page.php">
+					<div class="name_area-wrapper">
+						<p>Name <span>*</span></p>
+						<input type="text" id="name" name="name_client">
+					</div>
+					<div class="mail_area-wrapper">
+						<p>Mail <span>*</span></p>
+						<input type="text" id="mail" name="mail_client">
+					</div>
+					<div class="message_area-wrapper">
+						<p>Message <span>*</span></p>
+						<textarea name="message" id="message"></textarea>
+					</div>
+					<input class="send_message_button" type="send" value="Send message">
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="location">
+		<div class="map_hide-button">
+			<div class="map_hide_btn-text">
+				<span class="before"></span>
+				<span>Locate on map</span>
+				<span class="before"></span>
+				<i class="map_angle pe-7s-angle-down pe-va"></i>
+			</div>
+		</div>
+		<div id="map"></div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer_wrapper">
+				<img src="img/footer-logo.png" alt="footer-logo">
+				<h3>Boostfolia</h3>
+				<p>Made with love bu creativeproduct</p>
+				<div class="footer_socials">
+					<i class="fab fa-behance"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-facebook"></i>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWgSpFamcet9jtNeuJ_1nOHpz9nc8InV4&callback=myMap">
+    </script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/owlcarousel/owl.carousel.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/viewportChecker.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="js/script.js"></script>
+</body>
+</html>
